@@ -6,6 +6,8 @@ port = process.env.PORT || 80;
 
 const app = express();
 
+app.set('view engine', 'html');
+
 app.post('/execute', function(req, res) { 
 
   console.log('executed');
