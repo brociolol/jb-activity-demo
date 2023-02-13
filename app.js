@@ -6,49 +6,49 @@ port = process.env.PORT || 80;
 
 const app = express();
 
-app.post('/execute', function(req, res) => { 
+app.post('/execute', function(req, res) { 
 
   console.log('executed');
 
 });
 
-app.get('/index.html', function(req, res) => {
+app.get('/index.html', function(req, res) {
 
   return res.render('/html/index.html');
   
 });
 
-app.get('/config.json', function(req, res) => {
+app.get('/config.json', function(req, res) {
 
   return res.status(200).json(configJSON(req));
   
 });
 
-app.post('/save', function(req, res) => {
+app.post('/save', function(req, res) {
 
   return res.status(200).json({});
   
 });
 
-app.post('/publish', function(req, res) => {
+app.post('/publish', function(req, res) {
 
   return res.status(200).json({});
   
 });
 
-app.post('/validate', function(req, res) => {
+app.post('/validate', function(req, res) {
 
   return res.status(200).json({});
   
 });
 
-app.post('/stop', function(req, res) => {
+app.post('/stop', function(req, res) {
 
   return res.status(200).json({});
   
 });
 
-app.post('/stop', function(req, res) => {
+app.post('/stop', function(req, res) {
 
   return res.status(200).json({});
   
