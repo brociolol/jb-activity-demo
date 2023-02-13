@@ -3,7 +3,7 @@ module.exports = function configJSON(req) {
     workflowApiVersion: '1.1',
     metaData: {
       // the location of our icon file
-      icon: `/icon.png`,
+      icon: `https://www.bounteous.com/public/static/c6ed191bba8bd368338f06324bbf45bf/6d161/salesforce_2x.png`,
       category: 'customer'
     },
     // For Custom Activity this must say, "REST"
