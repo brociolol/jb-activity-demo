@@ -1,5 +1,5 @@
 const express = require('express');
-const configJSON = require('/config/config-json');
+const configJSON = require('/config/config-json.js');
 const
 
 port = process.env.PORT || 80;
