@@ -16,7 +16,7 @@ app.post('/execute', function(req, res) {
 
 app.get('/index.html', function(req, res) {
 
-  return res.render('./html/index.html');
+  return res.send('Event name will be sent over');
   
 });
 
