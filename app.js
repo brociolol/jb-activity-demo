@@ -6,7 +6,7 @@ port = process.env.PORT || 80;
 
 const app = express();
 
-app.set('view engine', 'html');
+app.set('view engine', 'ejs');
 
 app.post('/execute', function(req, res) { 
 
@@ -16,7 +16,7 @@ app.post('/execute', function(req, res) {
 
 app.get('/index.html', function(req, res) {
 
-  return res.send('Event name will be sent over');
+  return res.render('/html/index.ejs');
   
 });
 
